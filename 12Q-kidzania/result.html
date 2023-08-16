@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Result</title>
+    <link rel="stylesheet" href="result.css">
 </head>
 <body>
-<h1>Quiz Result</h1>
 
-<div id="resultContainer">
-    <p id="totalScore"></p>
-    <p id="jobSelection"></p>
+
+<div class="result-container">
+    <h1 class="result-header">Quiz Result</h1>
+    <p>Your total score: <span id="score"></span></p>
+    <p>Recommended job: <span id="recommendedJob"></span></p>
 </div>
 
-<button id="printButton">Print</button>
+
+<!--<button id="printButton">Print</button>-->
 
 <script>
     // Lấy thông tin từ URL

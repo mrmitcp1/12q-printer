@@ -1,0 +1,23 @@
+
+
+.result-container {
+    background-image: url('aa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black; /* Màu chữ */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(76, 75, 75, 0.3);
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.result-header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
