@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+</head>
+<body>
+<h1>Quiz Result</h1>
+
+<div id="resultContainer">
+    <p id="totalScore"></p>
+    <p id="jobSelection"></p>
+</div>
+
+<button id="printButton">Print</button>
+
+<script>
+    // Lấy thông tin từ URL
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const totalScore = urlParams.get('score');
+    const job = urlParams.get('job');
+
+    // Hiển thị thông tin kết quả
+    const totalScoreElement = document.getElementById('totalScore');
+    const jobSelectionElement = document.getElementById('jobSelection');
+
+    totalScoreElement.textContent = `Total Score: ${totalScore}`;
+    jobSelectionElement.textContent = `Recommended Job: ${job}`;
+
+    // Xử lý sự kiện in khi nhấn nút "Print"
+    const printButton = document.getElementById('printButton');
+    printButton.addEventListener('click', () => {
+        window.print();
+    });
+</script>
+</body>
+</html>
