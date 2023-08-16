@@ -23,9 +23,7 @@ function calculateScore() {
     }
     document.getElementById("jobSelection").innerHTML = `Recommended Job: ${job}`;
 
-    const resultURL = `result.html?score=${totalScore}&job=${job}`;
-
-    // Chuyển hướng sang trang kết quả
+    let resultURL = `result.html?score=${totalScore}&job=${job}`;
     window.location.href = resultURL;
 }
 
